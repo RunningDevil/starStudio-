@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>myPage2</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .content{
+        padding: 20px;margin: 20px;border: 1px solid #999;background-color: #eee;display: inline-block;
+
+    }
+    .content .left{
+        padding: 20px;
+        height: 100px;
+        width: 200px;
+        background: white;
+        float: left;
+    }
+    .content .left img{
+        float: left;
+    }
+    .content .left span{
+        margin-left: 20px;
+        /*margin-top: 100px;为什么margin-top无效？*/
+    }
+    .content .right{
+        padding: 20px;
+        width: 80px;
+        background: white;
+        float: right;
+        border: 1px solid #999;
+    }
+    .right_second,.right_third,.right_fourth{
+        margin-top: 10px;
+    }
+    .content .main{
+        padding: 20px;
+        background: white;
+        /*float: right;*//*这个地方为什么不用设置浮动？却会显示在同一排？是因为文字会给浮动元素让位吗*/
+        margin-left: 260px;
+        margin-right: 200px;
+        border: 1px solid #999;
+    }
+
+</style>
+<body>
+<div class="content">
+    <div class="left">
+        <img src="img/star_logo.jpg" alt="">
+        <span>星辰工作室</span>
+    </div>
+    <div class="right">
+        <div class="right_first">
+            <img src="img/person1.jpg" alt="">
+        </div>
+        <div class="right_second">
+            <img src="img/person2.jpg" alt="">
+        </div>
+        <div class="right_third">
+            <img src="img/person3.png" alt="">
+        </div>
+        <div class="right_fourth">
+            <img src="img/person4.png" alt="">
+        </div>
+    </div>
+    <div class="main">
+        <p>电子科技大学星辰工作室建立于1998 年，是隶属于学工部的学生社团，主要从事软件开发，网站建设与维护等信息化工作。在工作室十年的发展过程中逐步积累了一套完整的项目开发管理制度，人才培养和新老交替机制，形成了工作室自己文化传统。“心态决定命运，技术决定未来！”一直是星辰工作室的口号。</p>
+        <p>星辰工作室曾先后开发了以下项目：学生之家系列网站，包括学生之家主页，音乐站，软件站，新闻抓取引擎，招新系统；学生之家内网搜索引擎；清水河畔BBS网站；贷款smis系统；电子科技大学就业网；学工部主页；学工部办公平台；奖贷助勤网；星辰网志系统；学风督查系统；优班创建系统；学生学习与发展指导中心等。</p>
+    </div>
+
+</div>
+</body>
+</html>
