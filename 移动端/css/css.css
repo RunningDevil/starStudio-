@@ -1,0 +1,151 @@
+
+.first{
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	background: url("../img/bg1.jpg");
+	border: 1px solid #000;
+	box-sizing: border-box;
+}
+.welcome{
+	width: 70vw;
+	height: 30vh;
+	margin: 0 auto;
+	margin-top: 45vh;
+	background: green;
+	text-align: center;
+	font-size: 5rem;
+	font-family: "微软雅黑";
+}
+.second{
+	width: 100vw;
+	height: 100vh;
+	background: url("../img/bg1.jpg");
+	overflow: hidden;
+	border: 1px solid #000;
+	box-sizing: border-box;
+
+}
+.top{
+	width: 90vw;
+	height: 10vh;
+	margin-top: 10vh;
+
+}
+.top .picture{
+	width: 170px;
+	height: 170px;
+	background: red;
+	float: left;
+	background: url("../img/picture.jpeg");
+}
+.top .name{
+	width: 70vw;
+	height: 10vh;
+	float: left;
+	text-align: center;
+	font-size: 2rem;
+	line-height: 10vh;
+}
+.content{
+	font-size: 3rem;
+	font-family: "微软雅黑";
+	width: 100vw;
+	height: 30vh;
+	margin-top: 3vh;
+	overflow: hidden;
+	position: relative;
+	border: 1px solid #000;
+	box-sizing: border-box;
+}
+.content .pct1{
+	width: 350px;
+	height: 350px;
+	background: red;
+	margin-top: 1vh;
+	position: absolute;
+	left: 1vh;
+	background: url("../img/pct1.jpg");
+
+
+}
+.footer{
+	width: 100vw;
+	height: 5vh;
+	line-height: 5vh;
+}
+.footer .share{
+	width: 40vw;
+	height: 4vh;
+	margin: 0 auto;
+}
+.footer a{
+	text-decoration: none;
+	font-size: 2rem;
+	color: black;
+	background: grey;
+}
+
+.third{
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;  
+	background: url("../img/bg1.jpg");
+	border: 1px solid #000;
+	box-sizing: border-box;
+} 
+
+.question{
+	width: 100vw;
+	height: 40vh;
+	margin: 0 auto;
+	margin-top: 15rem;
+}
+.topic{
+	width: 100vw;
+	height: 5vh;
+	margin: 0  auto;
+	text-align: center;
+	line-height: 5vh;
+	font-size: 2rem;
+	background: skyblue;
+}
+.option{
+	font-size: 2rem;
+	width: 60vw;
+	height: 25vh;
+	margin: 0  auto;
+	text-align: center;
+	line-height: 3vh;
+}
+.submit{
+	font-size: 1.5rem;
+	width: 8vw;
+	height: 2.5vh;
+
+}
+.fourth{
+	width: 100vw;
+	height: 100vh;
+
+	background: url("../img/bg1.jpg");
+ 	border: 1px solid #000;
+	box-sizing: border-box;
+	overflow: hidden;
+} 
+.fourth .back{
+	width: 50vw;
+	height: 5vh;
+	background: pink;
+	line-height: 5vh;
+	text-align: center;
+	/*font-size: 3rem */     /*这里的font-size会使得margin: 0 auto失效*/
+	margin: 0 auto;
+	margin-top: 15vh;
+
+}
+.fourth a{
+	text-decoration: none;
+	font-size: 3rem;
+
+}

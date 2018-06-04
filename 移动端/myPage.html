@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/css.css">
+	<script>
+		window.onload = function(){
+			var mybody = document.getElementsByTagName("body")[0];
+			var startY,endY;
+			var myOption  = document.getElementById("option");
+			var oBtn = document.getElementById("btn");
+			
+			 mybody.addEventListener('touchstart', function(e) {
+        		 e.preventDefault();
+        		 startY = e.touches[0].pageY;
+    	});
+			 mybody.addEventListener('touchmove',function(e){
+			 	//var timer = null;
+			 	e.preventDefault();
+			 	endY = e.changedTouches[0].pageY;
+			 	if (endY-startY>15) {
+			 		/*timer = setTimeout(function(){
+			 			alert("向下");
+			 		},20)	*/						//尴尬。。不知道怎么实现刚好翻到下一页。js还得好好学。。只会判断手指移动是向上还是向下。
+			 		//alert("向下");
+			 	}
+			 	if (endY-startY<-15){
+			 		/*timer = setTimeout(function(){
+			 			alert("向上");
+			 		},20)*/				//定时器这么用有bug。。
+			 		//alert("向上");
+			 	}
+			 })
+			  oBtn.onclick = function(){       //检验答案
+			  	if (document.getElementById("3").checked&&document.getElementById("1").checked||document.getElementById("3").checked&&document.getElementById("2").checked||document.getElementById("3").checked&&document.getElementById("4").checked||
+			  		document.getElementById("1").checked&&document.getElementById("2").checked||
+			  		document.getElementById("1").checked&&document.getElementById("4").checked||
+			  		document.getElementById("2").checked&&document.getElementById("4").checked){
+			  		alert("您选择了多个选项！请重选");
+			  		return;
+			  	}
+			 	if(document.getElementById("3").checked){
+			 		alert("恭喜您答对了！")
+			 	}
+			 	else{
+			 		alert("很遗憾您答错了。")        //简单的逻辑判断：对or错，单选or多选。
+			 	}
+			 }
+
+		}
+	</script>
+</head>
+<body>
+	<div class="first">
+		<div class="welcome">欢迎开始做题~</div>
+	</div>
+	<div class="second">
+		<div class="top">
+			<div class="picture"></div>
+			<div class="name">RunningDevil |从入门到入坟之JavaScript</div>
+		</div>
+		<div class="content">
+			心若不死,学习不止
+			<div class="pct1"></div>
+		</div>
+		<div class="footer">
+			<div class="share">
+			<a href="javascript:;">点赞</a>	<a href="javascript:;">分享</a> <a href="javascript:;">评论</a>
+			</div>
+		</div>
+	</div>
+	<div class="third">
+		<div class="question">
+			<div class="topic">
+				<p>你猜猜哪个是答案~(正确答案只有一个）</p></div>
+			<div class="option" id="option">
+				<input type="checkbox" id="1" value="1">第一个选项<br>
+				<input type="checkbox" id="2" value="2">第二个选项<br>
+				<input type="checkbox" id="3" value="3">第三个选项<br>
+				<input type="checkbox" id="4" value="4">第四个选项<br>       <!--答案是第三个-->
+				<button id="btn" class="submit">确认</button>
+			</div>
+		</div>
+	</div>
+	<div class="fourth">
+		<div class="back">
+		<a href="#">点我回到第一页~~</a>
+		</div>
+	</div>
+	<input type="button" id="button">
+</body>
+</html>
